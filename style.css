@@ -1,0 +1,184 @@
+/* Configuração global */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container, .section {
+    flex-grow: 1; 
+}
+
+/* Estilização para os cards dos produtos */
+.product-card {
+    flex-shrink: 0;
+    width: 230px;
+    margin: 0 8px 16px;
+}
+
+/* Estilizaçõa para o footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto; 
+    position: relative;
+}
+
+/* Estilização para os Modal */
+#loginModal, #cartModal {
+    display: none; 
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+#loginModal .modal-content h2 {
+    margin-bottom: 15px;
+}
+
+#loginModal .modal-content label,
+#loginModal .modal-content input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+/* Estilização de fechar botão */
+.close-button {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.close-button:hover {
+    color: #555;
+}
+
+/* Estilização da badge do carrinho */
+#cartButton {
+    position: relative;
+}
+
+#cartButton .badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    transform: translate(50%, -50%);
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 6px 10px; 
+    font-size: 16px; 
+    min-width: 28px;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização para o Modal do carrinho */
+#cartModal .cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#cartModal .cart-total {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#finalizeOrderButton {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Ajustes para campos do formulário */
+form .form-control {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .form-control::placeholder {
+    font-size: 12px;
+    color: #aaa;
+}
+
+button[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Ajustes gerais */
+.navbar-brand.dash-title {
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 37px;
+}
+
+.card-header {
+    font-size: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 100px;
+}
+
+.logo-text {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#span-weight {
+    font-weight: bold;
+}
+
+
